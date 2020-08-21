@@ -1,5 +1,5 @@
 // Import MySQL connection.
-let connection = require("../config/connection.js")
+let connection = require('../config/connection.js')
 
 function selectAll() {
 
