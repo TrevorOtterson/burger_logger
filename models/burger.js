@@ -13,8 +13,8 @@ let burger = {
       cb(res)
     })
   },
-  update: function(obj_col_vals, condition, cb) {
-    orm.update('burgers', obj_col_vals, condition, function(res) {
+  update: function(objColVals, condition, cb) {
+    orm.update('burgers', objColVals, condition, function(res) {
       cb(res)
     })
   },
