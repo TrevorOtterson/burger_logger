@@ -4,13 +4,13 @@ let orm = require('../config/orm.js')
 let burger = {
   all: function(cb) {
     orm.all('burgers', function(res) {
-      cb(res);
+      cb(res)
     })
   },
   // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
     orm.create('burgers', cols, vals, function(res) {
-      cb(res);
+      cb(res)
     })
   },
   update: function(obj_col_vals, condition, cb) {
@@ -26,4 +26,4 @@ let burger = {
 }
 
 // Export the database functions for the controller (catsController.js).
-module.exports = burger;
+module.exports = burger
